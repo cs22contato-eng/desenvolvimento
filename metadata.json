@@ -1,0 +1,6 @@
+{
+  "name": "CS22 · Desenvolvimento Digital",
+  "description": "Digital Product Studio especializado na criação de sites profissionais, aplicativos, micro aplicações e Micro SaaS sob medida para automatizar processos e escalar negócios.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

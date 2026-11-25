@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --color-cs-copper: #E86A17;
+  --color-cs-copper-dark: #C8510A;
+  --color-cs-copper-light: #F5882B;
+  --color-cs-ink: #11141A;
+  --color-cs-steel: #4B5563;
+  --color-cs-obsidian: #07080B;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    scroll-padding-top: 5.5rem;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+  }
+}
+
+.bg-tech-grid {
+  background-size: 40px 40px;
+  background-image:
+    linear-gradient(to right, rgba(17, 20, 26, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(17, 20, 26, 0.04) 1px, transparent 1px);
+}
+
+.bg-tech-grid-dark {
+  background-size: 32px 32px;
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.045) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.045) 1px, transparent 1px);
+}
+
+@keyframes gradientShift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.animate-gradient-subtle {
+  background-size: 200% 200%;
+  animation: gradientShift 10s ease infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-gradient-subtle {
+    animation: none;
+  }
+}
